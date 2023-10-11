@@ -4,10 +4,13 @@
 #define MAX_EMPLOYEES 50
 
 // Function to check employee temperatures
-void checkTemperatures(float temperatures[], int numEmployees) {
+void checkTemperatures(float temperatures[], int numEmployees) 
+{
     printf("Employee with high temperatures:\n");
-    for (int i = 0; i < numEmployees; i++) {
-        if (temperatures[i] > 98.6) {
+    for (int i = 0; i < numEmployees; i++) 
+    {
+        if (temperatures[i] > 98.6) 
+        {
             printf("Employee %d: %.2f°F\n", i + 1, temperatures[i]);
         }
     }
@@ -22,7 +25,8 @@ int main() {
     scanf("%d", &numEmployees);
 
     // Input employee temperatures
-    for (int i = 0; i < numEmployees; i++) {
+    for (int i = 0; i < numEmployees; i++) 
+    {
         printf("Enter temperature for Employee %d: ", i + 1);
         scanf("%f", &temperatures[i]);
     }
