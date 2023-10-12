@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+  int m=0,count= 0;
+  char s[20];
+  printf("Enter the name : ");
+  gets(s);
+
+  while (s[m] != '\0')
+ {
+    if (s[m] == 'a'|| s[m]== 'A' || s[m] == 'e' || s[m] == 'E' || s[m] == 'i' || s[m] == 'I' || s[m] == 'o' || s[m]== 'O' || s[m]== 'u' || s[m]== 'U' )
+    {
+        count++;
+    }
+        m++;
+  }
+  printf("They will get %d candies", count);
+  return 0;
+}
